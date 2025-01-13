@@ -9,9 +9,53 @@ body {
 
 .app-container {
     .header-container {
-        .nav-link {
-            &.active {
-                color: #007bff;
+        .btn-login {
+            margin-left: 15px;
+        }
+        .navbar {
+            z-index: 10;
+            background-color: rbga(0, 0, 0, 0) !important;
+
+            .nav-link {
+                &.active {
+                    color: #007bff;
+                }
+            }
+            img {
+                width: 70px;
+            }
+        }
+    }
+    .main-container {
+        .app-content {
+            .homepage-container {
+                .image-homepage {
+                    position: fixed;
+                    bottom: 55%;
+                    left: 50%;
+                    transform: translate(-50%, 40%);
+                    width: 100vw;
+                }
+                .homepage-content {
+                    padding: 100px;
+                    position: relative;
+                    img {
+                        width: 300px;
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: -50px;
+                    }
+                    .description {
+                        margin-top: -10px;
+                        text-align: center;
+                        font-size: 30px;
+                    }
+                    .signup {
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 10px;
+                    }
+                }
             }
         }
     }
